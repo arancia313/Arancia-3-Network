@@ -19,6 +19,7 @@ instantly detect it and will show a notification at start: "New Version Availabl
 This network uses an important system called "sk-gcc". It's a requirement for running the network,
 so make sure to have sk-gcc enabled on the A3S (it is enabled by default). If you refuse to activate 
 sk-gcc or maybe you don't feel like enabling it, you will get this error screen:
+
 <img width="472" height="358" alt="Cattura3" src="https://github.com/user-attachments/assets/91315027-efde-4f4c-afd4-6f945eae10b4" />
 
 You can disable it whenever you want, but if you don't wanna miss out on games on the network, please activate it.
