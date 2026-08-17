@@ -25,4 +25,4 @@ sk-gcc or maybe you don't feel like enabling it, you will get this error screen:
 You can disable it whenever you want, but if you don't wanna miss out on games on the network, please activate it.
 ## 2. You don't risk bans just for running homebrew
 Don't worry, you will never risk getting banned for running homebrew that connects to arancia 3's servers.
-You can customize your A3S and do whatever you want with it, since you own it(if you have it downloaded and saved).
+If you have a modified A3S with another firmware rather than Schedule (sCHEc for example), nothing bad will happen.
