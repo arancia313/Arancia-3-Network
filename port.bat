@@ -1,0 +1,1 @@
+powershell -Command "Start-Process netsh -ArgumentList 'interface portproxy add v4tov4 listenport=30003 listenaddress=0.0.0.0 connectport=30003 connectaddress=127.0.0.1' -Verb RunAs"
