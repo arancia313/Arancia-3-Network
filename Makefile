@@ -15,6 +15,7 @@ deploy:
 	mkdir -p b/hard-en/psp
 	mkdir -p b/sys
 	mkdir -p b/sys/A3_modules
+	mkdir -p b/sys/net
 files:
 	@echo "Flashing files..."
 	cp store/licenses.json b/store/licenses.json
@@ -23,7 +24,9 @@ files:
 	cp store/games/Scratch_cats_s_Road.sb b/store/games/Scratch_cats_s_Road.sb
 	cp store/games/Incredibox-Smart_Hub_Kuh_treatment.sb3 b/store/games/Incredibox-Smart_Hub_Kuh_Treatment.sb3
 	
-
+modules:
+	@echo "Loading modules..."
+	cp net_environment/port.txt b/sys/net/port.txt
 .PHONY: clean
 
 clean:

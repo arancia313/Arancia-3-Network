@@ -6,11 +6,11 @@
 
 #### Features
 
-- This is a simplified network without any Python code.
-- It has a firmware.txt file. The A3S will detect it at boot, and if it's another
+ - This is a simplified network without any Python code.
+ - It has a firmware.txt file. The A3S will detect it at boot, and if it's another
 major firmware (1.50) rather than the current firmware (1.00), the A3S will
 instantly detect it and will show a notification at start: "New Version Available!".
-- Never goes down.
+ - Never goes down.
 <img width="476" height="353" alt="Cattura" src="https://github.com/user-attachments/assets/b6b973d0-1a8a-4a73-bc69-f4dfaedc199a" />
 <img width="474" height="356" alt="Cattura2" src="https://github.com/user-attachments/assets/ed6d72cd-99f1-4854-bbeb-d2604ed17d7f" />
 
@@ -26,3 +26,22 @@ You can disable it whenever you want, but if you don't wanna miss out on games o
 ## 2. You don't risk bans just for running homebrew
 Don't worry, you will never risk getting banned for running homebrew that connects to arancia 3's servers.
 If you have a modified A3S with another firmware rather than Schedule (sCHEc for example), nothing bad will happen.
+
+## How to connect to the network
+This network Works just like CloudLink, that Scratch Extension you use every day. To do this, here are some things that you need:
+ - A modern windows 10 or 11 PC. Older PC's (like those who have windows 7 or Vista) are able to connect only as clients,
+because they do not have the commands to make host for the server. 
+ - WSL, Windows subsystem for Linux (works flawlessly).
+ - An Ubuntu Terminal.
+ Clone the source code by using this command:
+              git clone https://github.com/arancia313/Arancia-3-Network
+Then, execute this command:
+              make clean && make server
+This command will connect you to localhost:30003.
+
+#### Arancia 3 focusing to the clients
+
+You just need to have a terminal (Make sure to have the WSL one, and not the classic CMD one!).
+you need to execute this command:
+              nc localhost:30003
+This will connect you to localhost:30003, just like you would expect.
