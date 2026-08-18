@@ -3,6 +3,7 @@ ifeq ($(V),1)
  else
  Q = @
  endif
+
 .PHONY: all
 
 all: deploy files modules
@@ -25,6 +26,9 @@ deploy:
 	$(Q)mkdir -p b/home/user/configs/eltra
 	$(Q)mkdir -p b/home/user/stubmodules
 	$(Q)mkdir -p b/home/user/cel
+	$(Q)mkdir -p b/home/user/configs/bhomhom
+	@echo "Linking suggestion..."
+	$(Q)cp configs/suggestion.txt b/suggestion.txt
 files:
 	@echo "Flashing files..."
 	$(Q)cp store/licenses.json b/store/licenses.json
@@ -41,6 +45,8 @@ modules:
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
 	$(Q)cp cel/celnum.txt b/home/user/cel/celnum.txt
+	$(Q)cp bhome/bmod.A3 b/home/user/configs/bhomhom/bmod.A3
+	$(Q)cp bhome/bshell.A3 b/home/user/configs/bhomhom/bshell.A3
 .PHONY: clean
 
 clean:
@@ -51,9 +57,9 @@ clean:
 .PHONY: server
 
 server:
-	powershell.exe /c .\\port.bat
+	$(Q)powershell.exe /c .\\port.bat
 	@echo "i'm now connecting you to Arancia 3's Server".
-	nc -lk -p 30003
+	$(Q)nc -lk -p 30003
 .PHONY: comp
 
 comp:
