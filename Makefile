@@ -27,6 +27,7 @@ deploy:
 	$(Q)mkdir -p b/home/user/configs
 	$(Q)mkdir -p b/home/user/configs/eltra
 	$(Q)mkdir -p b/home/user/stubmodules
+	$(Q)mkdir -p b/home/user/cel
 files:
 	@echo "Flashing files..."
 	$(Q)cp store/licenses.json b/store/licenses.json
@@ -42,6 +43,7 @@ modules:
 	$(Q)cp sk-gcc/devices.A3 b/sys/A3_modules/supported_devices.txt
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
+	$(Q)cp
 .PHONY: clean
 
 clean:
