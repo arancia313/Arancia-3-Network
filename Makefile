@@ -8,11 +8,10 @@ ifeq ($(V),1)
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
-all:
 .PHONY: deploy
 
 deploy:
-	@echo "Installing b..."
+	@echo "Logical blash Rendering..."
 	$(Q)mkdir -p b
 	$(Q)mkdir -p b/store
 	$(Q)mkdir -p b/store/games
