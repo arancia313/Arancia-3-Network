@@ -6,10 +6,7 @@ ifeq ($(V),1)
 .PHONY: all
 
 all: deploy files modules
-	@echo "Compressing..."
-	$(Q)zip -r CA3N.zip b
 	@echo "Compact A3N Now in use."
-
 all:
 .PHONY: deploy
 
@@ -43,7 +40,7 @@ modules:
 	$(Q)cp sk-gcc/devices.A3 b/sys/A3_modules/supported_devices.txt
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
-	$(Q)cp
+	$(Q)cp cel/celnum.txt b/home/user/cel/celnum.txt
 .PHONY: clean
 
 clean:
@@ -57,3 +54,8 @@ server:
 	powershell.exe /c .\\port.bat
 	@echo "i'm now connecting you to Arancia 3's Server".
 	nc -lk -p 30003
+.PHONY: comp
+
+comp:
+	@echo "Compressing.."
+	zip -r CA3N.zip b

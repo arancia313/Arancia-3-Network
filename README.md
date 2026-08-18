@@ -57,3 +57,13 @@ Very simple. You just need to go to the Arancia 3 Network category (that orange 
  - Just authenthicate, login, and you're done.
  - After you logged in, a window will appear. This window like, "Thank you, player5830".
  - Now, just click anywhere to go into the XMB.
+## How to make the Compact A3N
+This is very simple for some windows 10 and 11 users, but it's a bit tough for users with an older OS.
+ - For windows 11 users, you need to execute this command, if you have WSL:
+              make
+ - For windows 7 or older users, make doesn't exist. But there is a way to bypass this.
+ make sure you have Git bash, because it will not work on powershell.
+ Execute this command right here, since the program is installed here:
+              ./make.exe
+ To clean up everything, you need to execute those commands:
+For windows 11 users: make clean | For windows 7 or older users: ./make.exe clean.
