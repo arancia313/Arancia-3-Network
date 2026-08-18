@@ -27,8 +27,13 @@ You can disable it whenever you want, but if you don't wanna miss out on games o
 Don't worry, you will never risk getting banned for running homebrew that connects to arancia 3's servers.
 If you have a modified A3S with another firmware rather than Schedule (sCHEc for example), nothing bad will happen.
 
+## How to install WSL for the network (for those who are new to WSL)
+You just need to have your classic cmd terminal (Make sure to run it as administrator to prevent permission errors!).
+You will need to Execute this command:
+              wsl --install
+This will install everything you need.
 ## How to connect to the network
-This network Works just like CloudLink, that Scratch Extension you use every day. To do this, here are some things that you need:
+This network Works kind of like CloudLink, that Scratch Extension you use every day. To do this, here are some things that you need:
  - A modern windows 10 or 11 PC. Older PC's (like those who have windows 7 or Vista) are able to connect only as clients,
 because they do not have the commands to make host for the server. 
  - WSL, Windows subsystem for Linux (works flawlessly).
@@ -45,3 +50,10 @@ You just need to have a terminal (Make sure to have the WSL one, and not the cla
 you need to execute this command:
               nc localhost:30003
 This will connect you to localhost:30003, just like you would expect.
+## How to connect to the network (on the A3S)
+Very simple. You just need to go to the Arancia 3 Network category (that orange icon with the star).
+ - Then, click "Sign up for Arancia 3 Network".
+ - Now, once you are on the A3N window, click the "Use existing account" button.
+ - Just authenthicate, login, and you're done.
+ - After you logged in, a window will appear. This window like, "Thank you, player5830".
+ - Now, just click anywhere to go into the XMB.
