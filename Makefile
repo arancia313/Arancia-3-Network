@@ -4,6 +4,8 @@ ifeq ($(V),1)
  Q = @
  endif
 
+.PHONY: all deploy files modules clean server comp
+
 all: deploy files modules
 	@echo "Compact A3N Now in use."
 
