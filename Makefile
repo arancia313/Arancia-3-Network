@@ -38,12 +38,13 @@ files:
 	$(Q)cp store/games/Incredibox-Smart_Hub.sb3 b/store/games/Incredibox-Smart_Hub.sb3
 	
 modules:
-	@echo "Loading modules..."
+	@echo "Loading blash modules..."
 	$(Q)cp net_environment/port.txt b/sys/net/port.txt
 	$(Q)cp sk-gcc/devices.A3 b/sys/A3_modules/supported_devices.txt
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
 	$(Q)cp cel/celnum.txt b/home/user/cel/celnum.txt
+	$(Q)cp cel/celim.txt b/home/user/cel/celim.txt
 	$(Q)cp bhome/bmod.A3 b/home/user/configs/bhomhom/bmod.A3
 	$(Q)cp bhome/bshell.A3 b/home/user/configs/bhomhom/bshell.A3
 .PHONY: clean
