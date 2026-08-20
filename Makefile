@@ -18,6 +18,7 @@ deploy:
 	$(Q)mkdir -p b/sys
 	$(Q)mkdir -p b/sys/A3_modules
 	$(Q)mkdir -p b/sys/net
+	$(Q)mkdir -p b/sys/net/statistics
 	$(Q)mkdir -p b/home
 	$(Q)mkdir -p b/home/user
 	$(Q)mkdir -p b/home/user/configs
@@ -26,6 +27,7 @@ deploy:
 	$(Q)mkdir -p b/home/user/cel
 	$(Q)mkdir -p b/home/user/configs/bhomhom
 	$(Q)mkdir -p b/ur_own_infastructure
+	$(Q)mkdir -p b/sys/net/logs
 	@echo "Linking suggestion..."
 	$(Q)cp configs/suggestion.txt b/suggestion.txt
 files:
@@ -40,6 +42,7 @@ files:
 modules:
 	@echo "Loading blash modules..."
 	$(Q)cp net/net_environment/port.txt b/sys/net/port.txt
+	$(Q)cp net/statistics/ping.A3 b/sys/net/statistics/ping.txt
 	$(Q)cp sk-gcc/devices.A3 b/sys/A3_modules/supported_devices.txt
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
@@ -47,6 +50,7 @@ modules:
 	$(Q)cp cel/celim.txt b/home/user/cel/celim.txt
 	$(Q)cp bhome/bmod.A3 b/home/user/configs/bhomhom/bmod.A3
 	$(Q)cp bhome/bshell.A3 b/home/user/configs/bhomhom/bshell.A3
+	$(Q)cp net/log.txt b/sys/net/logs/log.txt
 
 clean:
 	$(Q)rm -rf b
