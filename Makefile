@@ -31,6 +31,7 @@ deploy:
 files:
 	@echo "Flashing files..."
 	$(Q)cp store/licenses.json b/store/licenses.json
+	$(Q)cp store/games.txt b/store/games.txt
 	$(Q)cp psp/exh.txt b/hard-en/psp/exh.txt
 	$(Q)cp firmware.txt b/sys/firmware.txt
 	$(Q)cp store/games/Scratch_cats_s_Road.sb b/store/games/Scratch_cats_s_Road.sb
@@ -57,7 +58,9 @@ server:
 	$(Q)powershell.exe /c .\\port.bat
 	@echo "i'm now connecting you to Arancia 3's Server".
 	$(Q)nc -lk -p 30003
+	@echo "Done!"
 
 comp:
 	@echo "Compressing.."
 	zip -r CA3N.zip b
+	@echo "Done!"
