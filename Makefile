@@ -70,3 +70,4 @@ comp:
 	@echo "Done!"
 mov:
 	$(Q)cp -r b sk-gcc/b
+	@echo "Ok, i have moved b to sk-gcc."
