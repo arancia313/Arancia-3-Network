@@ -4,7 +4,7 @@ ifeq ($(V),1)
  Q = @
  endif
 
-.PHONY: all deploy files modules clean server comp
+.PHONY: all deploy files modules clean server comp mov
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
@@ -68,3 +68,5 @@ comp:
 	@echo "Compressing.."
 	zip -r CA3N.zip b
 	@echo "Done!"
+mov:
+	$(Q)cp -r b sk-gcc/b
