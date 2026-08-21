@@ -70,4 +70,5 @@ comp:
 	@echo "Done!"
 mov:
 	$(Q)cp -r b sk-gcc/blash/b
-	@echo "Ok, i have moved b to sk-gcc."
+	$(Q)rm -rf b
+	@echo "Moved blash to sk-gcc/blash."
