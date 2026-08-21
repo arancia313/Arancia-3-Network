@@ -4,7 +4,7 @@ ifeq ($(V),1)
  Q = @
  endif
 
-.PHONY: all deploy files modules clean server comp mov
+.PHONY: all deploy files modules clean server comp mov back
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
@@ -73,3 +73,7 @@ mov:
 	$(Q)cp -r b sk-gcc/blash/b
 	$(Q)rm -rf b
 	@echo "Moved blash to sk-gcc/blash."
+back:
+	$(Q)cp -r sk-gcc/blash/b b
+	$(Q)rm -rf sk-gcc/blash/b
+	@echo "Moved blash back to root."
