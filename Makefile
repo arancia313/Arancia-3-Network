@@ -69,5 +69,5 @@ comp:
 	zip -r CA3N.zip b
 	@echo "Done!"
 mov:
-	$(Q)cp -r b sk-gcc/b
+	$(Q)cp -r b sk-gcc/blash/b
 	@echo "Ok, i have moved b to sk-gcc."
