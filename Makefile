@@ -55,6 +55,7 @@ modules:
 clean:
 	$(Q)rm -rf b
 	$(Q)rm -rf CA3N.zip
+	$(Q)rm -rf sk-gcc/blash/b
 	@echo "Ok, i removed everything here."
 
 
