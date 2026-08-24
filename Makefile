@@ -4,7 +4,7 @@ ifeq ($(V),1)
  Q = @
  endif
 
-.PHONY: all deploy files modules clean server comp mov
+.PHONY: all deploy files modules clean server s-connect comp mov back
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
@@ -28,6 +28,7 @@ deploy:
 	$(Q)mkdir -p b/home/user/configs/bhomhom
 	$(Q)mkdir -p b/ur_own_infastructure
 	$(Q)mkdir -p b/sys/net/logs
+	$(Q)mkdir -p b/home/user/configs/bhomhom/blashmodules
 	@echo "Linking suggestion..."
 	$(Q)cp configs/suggestion.txt b/suggestion.txt
 files:
@@ -51,22 +52,36 @@ modules:
 	$(Q)cp bhome/bmod.A3 b/home/user/configs/bhomhom/bmod.A3
 	$(Q)cp bhome/bshell.A3 b/home/user/configs/bhomhom/bshell.A3
 	$(Q)cp net/log.txt b/sys/net/logs/log.txt
+	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 b/home/user/configs/bhomhom/blashmodules/hiberfil.A3
+	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 b/home/user/configs/bhomhom/blashmodules/butiwe.A3
 
 clean:
 	$(Q)rm -rf b
 	$(Q)rm -rf CA3N.zip
+	$(Q)rm -rf sk-gcc/blash/b
 	@echo "Ok, i removed everything here."
-
-
-server:
+2-cmd:
 	$(Q)powershell.exe /c .\\port.bat
+	$(Q)@bash check.sh
 	@echo "i'm now connecting you to Arancia 3's Server".
 	$(Q)nc -lk -p 30003
 	@echo "Done!"
-
+server:
+	@echo "i'm now connecting you to Arancia 3's Server".
+	$(Q)@bash check.sh
+	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr -
+s-connect:
+	@echo "Connected."
+	$(Q)nc localhost 30003
 comp:
 	@echo "Compressing.."
 	zip -r CA3N.zip b
 	@echo "Done!"
 mov:
-	$(Q)cp -r b sk-gcc/b
+	$(Q)cp -r b sk-gcc/blash/b
+	$(Q)rm -rf b
+	@echo "Moved blash to sk-gcc/blash."
+back:
+	$(Q)cp -r sk-gcc/blash/b b
+	$(Q)rm -rf sk-gcc/blash/b
+	@echo "Moved blash back to root."
