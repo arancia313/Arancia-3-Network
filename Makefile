@@ -4,7 +4,7 @@ ifeq ($(V),1)
  Q = @
  endif
 
-.PHONY: all deploy files modules clean server s connect comp mov back
+.PHONY: all deploy files modules clean server s-connect comp mov back
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
@@ -60,13 +60,17 @@ clean:
 	$(Q)rm -rf CA3N.zip
 	$(Q)rm -rf sk-gcc/blash/b
 	@echo "Ok, i removed everything here."
-server:
+2-cmd:
 	$(Q)powershell.exe /c .\\port.bat
 	$(Q)@bash check.sh
 	@echo "i'm now connecting you to Arancia 3's Server".
 	$(Q)nc -lk -p 30003
 	@echo "Done!"
-s connect:
+server:
+	@echo "i'm now connecting you to Arancia 3's Server".
+	$(Q)@bash check.sh
+	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr -
+s-connect:
 	@echo "Connected."
 	$(Q)nc localhost 30003
 comp:
