@@ -42,13 +42,13 @@ because they do not have the commands to make host for the server.
               git clone https://github.com/arancia313/Arancia-3-Network
 Then, execute this command:
               make clean && make server
-This command will connect you to localhost:30003.
+This command will radically remove the blash and connect you to localhost:30003.
 
 #### Arancia 3 focusing to the clients
 
 You just need to have a terminal (Make sure to have the WSL one, and not the classic CMD one!).
 you need to execute this command:
-              nc localhost 30003
+              make s-connect
 This will connect you to localhost:30003, just like you would expect.
 ## How to connect to the network (on the A3S)
 Very simple. You just need to go to the Arancia 3 Network category (that orange icon with the star).
