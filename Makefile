@@ -12,6 +12,7 @@ all: deploy files modules
 deploy:
 	@echo "Logical blash Rendering..."
 	$(Q)mkdir -p b
+	$(Q)mkdir -p b/structure
 	$(Q)mkdir -p b/store
 	$(Q)mkdir -p b/store/games
 	$(Q)mkdir -p b/hard-en/psp
@@ -40,6 +41,7 @@ files:
 	$(Q)cp store/games/Scratch_cats_s_Road.sb b/store/games/Scratch_cats_s_Road.sb
 	$(Q)cp store/games/Incredibox-Smart_Hub_Kuh_treatment.sb3 b/store/games/Incredibox-Smart_Hub_Kuh_Treatment.sb3
 	$(Q)cp store/games/Incredibox-Smart_Hub.sb3 b/store/games/Incredibox-Smart_Hub.sb3
+	$(Q)cp Makefile b/structure/Makefile
 modules:
 	@echo "Loading blash modules..."
 	$(Q)cp net/net_environment/port.txt b/sys/net/port.txt
@@ -72,7 +74,7 @@ server:
 	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr -
 s-connect:
 	@echo "Connected."
-	$(Q)nc localhost 30003
+	$(Q)nc 127.0.0.1 30003
 comp:
 	@echo "Compressing.."
 	zip -r CA3N.zip b
