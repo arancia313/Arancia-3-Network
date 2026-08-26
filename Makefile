@@ -62,12 +62,6 @@ clean:
 	$(Q)rm -rf CA3N.zip
 	$(Q)rm -rf sk-gcc/blash/b
 	@echo "Ok, i removed everything here."
-2-cmd:
-	$(Q)powershell.exe /c .\\port.bat
-	$(Q)@bash check.sh
-	@echo "i'm now connecting you to Arancia 3's Server".
-	$(Q)nc -lk -p 30003
-	@echo "Done!"
 server:
 	@echo "i'm now connecting you to Arancia 3's Server".
 	$(Q)@bash check.sh
