@@ -1,6 +1,4 @@
-<img width="467" height="80" alt="costume2" src="https://github.com/user-attachments/assets/c7eee087-8b5f-4ad3-8770-cb86605444bc" />
-
-# Arancia 3 Network
+# <img width="480" height="80" alt="costume2" src="https://github.com/user-attachments/assets/c7eee087-8b5f-4ad3-8770-cb86605444bc" />
 
  - Newest updated network for the A3S (Arancia 3 System) and projects that use the Fetch or Git Penguin extension.
  - Can be used with the Arancia 3 Store.
