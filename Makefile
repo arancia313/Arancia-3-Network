@@ -8,7 +8,6 @@ ifeq ($(V),1)
 
 all: deploy files modules
 	@echo "Compact A3N Now in use."
-
 deploy:
 	@echo "Logical blash Rendering..."
 	$(Q)mkdir -p b
