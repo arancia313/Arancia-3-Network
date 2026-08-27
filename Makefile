@@ -4,9 +4,9 @@ ifeq ($(V),1)
  Q = @
  endif
 
-.PHONY: make all deploy files modules clean server s-connect comp mov back
+.PHONY: make all deploy files modules libs clean server s-connect comp mov back
 
-all: deploy files modules
+all: deploy files modules libs
 	@echo "Compact A3N Now in use."
 deploy:
 	@echo "Logical blash Rendering..."
@@ -29,6 +29,10 @@ deploy:
 	$(Q)mkdir -p b/ur_own_infastructure
 	$(Q)mkdir -p b/sys/net/logs
 	$(Q)mkdir -p b/home/user/configs/bhomhom/blashmodules
+	$(Q)mkdir -p b/home/user/configs/libs/butterfly
+	$(Q)mkdir -p b/home/user/configs/libs/maxinum
+	$(Q)mkdir -p b/home/user/configs/libs/lazybum
+	$(Q)mkdir -p b/home/user/configs/libs/peceteN36640
 	@echo "Linking suggestion..."
 	$(Q)cp configs/suggestion.txt b/suggestion.txt
 files:
@@ -45,6 +49,7 @@ modules:
 	@echo "Loading blash modules..."
 	$(Q)cp net/net_environment/port.txt b/sys/net/port.txt
 	$(Q)cp net/statistics/ping.A3 b/sys/net/statistics/ping.txt
+	$(Q)cp net/statistics/games.A3 b/sys/net/games.txt
 	$(Q)cp sk-gcc/devices.A3 b/sys/A3_modules/supported_devices.txt
 	$(Q)cp sk-gcc/ehshell.txt b/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 b/home/user/stubmodules/bshell_stub.A3
@@ -55,7 +60,16 @@ modules:
 	$(Q)cp net/log.txt b/sys/net/logs/log.txt
 	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 b/home/user/configs/bhomhom/blashmodules/hiberfil.A3
 	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 b/home/user/configs/bhomhom/blashmodules/butiwe.A3
-
+	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 b/home/user/configs/bhomhom/blashmodules/lazybum.A3
+	$(Q)cp sk-gcc/blash/blashmodules/peceteN36640.A3 b/home/user/configs/bhomhom/blashmodules/peceteN36640.A3
+	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 b/home/user/configs/bhomhom/blashmodules/maxinum.A3
+	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 b/home/user/configs/bhomhom/blashmodules/butterfly.A3
+libs:
+	@echo "Initializing libraries..."
+	$(Q)cp b/home/user/configs/bhomhom/blashmodules/lazybum.A3 b/home/user/configs/libs/lazybum/lazybum.A3
+	$(Q)cp b/home/user/configs/bhomhom/blashmodules/peceteN36640.A3 b/home/user/configs/libs/peceteN36640/peceteN36640.A3
+	$(Q)cp b/home/user/configs/bhomhom/blashmodules/maxinum.A3 b/home/user/configs/libs/maxinum/maxinum.A3
+	$(Q)cp b/home/user/configs/bhomhom/blashmodules/butterfly.A3 b/home/user/configs/libs/butterfly/butterfly.A3
 clean:
 	$(Q)rm -rf b
 	$(Q)rm -rf CA3N.zip
