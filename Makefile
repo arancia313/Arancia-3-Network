@@ -35,6 +35,7 @@ deploy:
 	$(Q)mkdir -p b/home/user/configs/libs/lazybum
 	$(Q)mkdir -p b/home/user/configs/libs/peceteN36640
 	$(Q)mkdir -p b/home/user/configs/libs/cve
+	$(Q)mkdir -p b/home/user/configs/libs/gougd
 	@echo "Linking suggestion..."
 	$(Q)cp configs/suggestion.txt b/suggestion.txt
 	@echo "Done."
@@ -70,6 +71,7 @@ modules:
 	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 b/home/user/configs/bhomhom/blashmodules/maxinum.A3
 	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 b/home/user/configs/bhomhom/blashmodules/butterfly.A3
 	$(Q)cp sk-gcc/blash/blashmodules/cve.A3 b/home/user/configs/bhomhom/blashmodules/cve.A3
+	$(Q)cp sk-gcc/blash/blashmodules/gougd.A3 b/home/user/configs/bhomhom/blashmodules/gougd.A3
 	@echo "Done."
 libs:
 	@echo "Initializing libraries..."
@@ -83,12 +85,15 @@ libs:
 	$(Q)cp b/home/user/configs/bhomhom/blashmodules/butterfly.A3 b/home/user/configs/libs/butterfly/butterfly.A3
 	@echo "cve"
 	$(Q)cp b/home/user/configs/bhomhom/blashmodules/cve.A3 b/home/user/configs/libs/cve/cve.A3
+	@echo "gougd"
+	$(Q)cp b/home/user/configs/bhomhom/blashmodules/gougd.A3 b/home/user/configs/libs/gougd/gougd.A3
 	@echo "Assessing Library modules on b/home/user/configs/bhomhom/blashmodules..."
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/lazybum.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b0.A3
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/peceteN36640.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b1.A3
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/maxinum.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b2.A3
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/butterfly.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b3.A3
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/cve.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b4.A3
+	$(Q)mv b/home/user/configs/bhomhom/blashmodules/gougd.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b5.A3
 	@echo "Done."
 clean:
 	$(Q)rm -rf b
