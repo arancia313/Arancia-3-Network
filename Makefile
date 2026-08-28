@@ -96,10 +96,11 @@ clean:
 	$(Q)rm -rf sk-gcc/blash/b
 	@echo "Ok, i removed everything here."
 server:
+	clear
 	@echo "i'm now connecting you to Arancia 3's Server".
-	$(Q)@bash check.sh
 	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr -
 s-connect:
+	clear
 	@echo "Connected."
 	$(Q)nc 127.0.0.1 30003
 comp:
