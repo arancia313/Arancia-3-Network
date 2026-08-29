@@ -1,7 +1,7 @@
 include include/general.mak
-.PHONY: make all deploy files modules libs clean server s-connect comp mov back
+.PHONY: make all deploy files modules libs radical clean server s-connect comp mov back
 
-all: deploy files modules libs
+all: deploy files modules libs radical
 	@echo "Compact A3N Now in use."
 deploy:
 	@echo "Logical blash Rendering..."
@@ -90,10 +90,29 @@ libs:
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/cve.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b4.A3
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b5.A3
 	@echo "Done."
+radical:
+	$(Q)cp sk-gcc/.json/directories.jsonc sk-gcc/.json/directories.A3
+	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 sk-gcc/blash/blashmodules/butiwe.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 sk-gcc/blash/blashmodules/hiberfil.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 sk-gcc/blash/blashmodules/butterfly.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/peceteN36640.A3 sk-gcc/blash/blashmodules/peceteN36640.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/cve.A3 sk-gcc/blash/blashmodules/cve.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/gougd.A3 sk-gcc/blash/blashmodules/gougd.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 sk-gcc/blash/blashmodules/maxinum.A3O
+	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 sk-gcc/blash/blashmodules/lazybum.A3O
 clean:
 	$(Q)rm -rf $(BLASH_DIR)
 	$(Q)rm -rf CA3N.zip
 	$(Q)rm -rf sk-gcc/blash/$(BLASH_DIR)
+	$(Q)rm -rf sk-gcc/.json/directories.A3
+	$(Q)rm -rf sk-gcc/blash/blashmodules/butiwe.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/butterfly.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/cve.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/gougd.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/hiberfil.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/lazybum.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/maxinum.A3O
+	$(Q)rm -rf sk-gcc/blash/blashmodules/peceteN36640.A3O
 	@echo "Ok, i removed everything here."
 server:
 	clear
