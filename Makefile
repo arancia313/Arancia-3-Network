@@ -123,7 +123,7 @@ clean:
 server:
 	clear
 	@echo "i'm now connecting you to Arancia 3's Server".
-	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr -
+	$(Q)socat TCP-LISTEN:30003,fork,reuseaddr TCP:127.0.0.1:30003
 s-connect:
 	clear
 	@echo "Connected."
