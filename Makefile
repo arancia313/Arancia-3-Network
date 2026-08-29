@@ -1,9 +1,4 @@
-ifeq ($(V),1)
- Q =
- else
- Q = @
- endif
-BLASH_DIR = b
+include include/general.mak
 .PHONY: make all deploy files modules libs clean server s-connect comp mov back
 
 all: deploy files modules libs
