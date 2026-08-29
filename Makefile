@@ -2,8 +2,11 @@ include include/general.mak
 .PHONY: make all deploy files modules libs radical clean server s-connect comp mov back
 
 all: deploy files modules libs radical
-	@echo "Compact A3N Now in use."
+	@echo "|=======================|"
+	@echo "|Compact A3N Now in use.|"
+	@echo "|=======================|"
 deploy:
+	clear
 	@echo "Logical blash Rendering..."
 	$(Q)mkdir -p $(BLASH_DIR)
 	$(Q)mkdir -p $(BLASH_DIR)/store
@@ -101,6 +104,7 @@ radical:
 	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 sk-gcc/blash/blashmodules/maxinum.A3O
 	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 sk-gcc/blash/blashmodules/lazybum.A3O
 clean:
+	clear
 	$(Q)rm -rf $(BLASH_DIR)
 	$(Q)rm -rf CA3N.zip
 	$(Q)rm -rf sk-gcc/blash/$(BLASH_DIR)
@@ -113,7 +117,9 @@ clean:
 	$(Q)rm -rf sk-gcc/blash/blashmodules/lazybum.A3O
 	$(Q)rm -rf sk-gcc/blash/blashmodules/maxinum.A3O
 	$(Q)rm -rf sk-gcc/blash/blashmodules/peceteN36640.A3O
-	@echo "Ok, i removed everything here."
+	@echo "|==============================|"
+	@echo "|Ok, i removed everything here.|"
+	@echo "|==============================|"
 server:
 	clear
 	@echo "i'm now connecting you to Arancia 3's Server".
