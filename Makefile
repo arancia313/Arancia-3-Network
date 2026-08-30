@@ -52,8 +52,8 @@ modules:
 	$(Q)cp net/net_environment/port.txt $(BLASH_DIR)/sys/net/port.txt
 	$(Q)cp net/statistics/ping.A3 $(BLASH_DIR)/sys/net/statistics/ping.txt
 	$(Q)cp net/statistics/games.A3 $(BLASH_DIR)/sys/net/games.txt
-	$(Q)cp sk-gcc/devices.A3 $(BLASH_DIR)/sys/A3_modules/supported_devices.txt
-	$(Q)cp sk-gcc/ehshell.txt $(BLASH_DIR)/home/user/configs/eltra/ehshell.txt
+	$(Q)cp $(HOME)/A3/sk-gcc/devices.A3 $(BLASH_DIR)/sys/A3_modules/supported_devices.txt
+	$(Q)cp $(HOME)/A3/sk-gcc/ehshell.txt $(BLASH_DIR)/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 $(BLASH_DIR)/home/user/stubmodules/bshell_stub.A3
 	$(Q)cp cel/celnum.txt $(BLASH_DIR)/home/user/cel/celnum.txt
 	$(Q)cp cel/celim.txt $(BLASH_DIR)/home/user/cel/celim.txt
@@ -61,15 +61,15 @@ modules:
 	$(Q)cp bhome/bshell.A3 $(BLASH_DIR)/home/user/configs/bhomhom/bshell.A3
 	$(Q)cp net/log.txt $(BLASH_DIR)/sys/net/logs/log.txt
 	@echo "copying component files..."
-	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/hiberfil.A3
-	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butiwe.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/hiberfil.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/hiberfil.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/butiwe.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butiwe.A3
 	@echo "copying Library files..."
-	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/lazybum.A3
-	$(Q)cp sk-gcc/blash/blashmodules/peceteN36640.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/peceteN36640.A3
-	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/maxinum.A3
-	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butterfly.A3
-	$(Q)cp sk-gcc/blash/blashmodules/cve.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/cve.A3
-	$(Q)cp sk-gcc/blash/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/lazybum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/lazybum.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/peceteN36640.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/peceteN36640.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/maxinum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/maxinum.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/butterfly.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butterfly.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/cve.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/cve.A3
+	$(Q)cp $(HOME)/A3/sk-gcc/blash/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3
 	@echo "Done."
 libs:
 	@echo "Initializing libraries..."
@@ -92,31 +92,22 @@ libs:
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butterfly.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b3.A3
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/cve.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b4.A3
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b5.A3
+	$(Q) $(MAKE) -C sk-gcc
 	@echo "Done."
-radical:
-	$(Q)cp sk-gcc/.json/directories.jsonc sk-gcc/.json/directories.A3
-	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 sk-gcc/blash/blashmodules/butiwe.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 sk-gcc/blash/blashmodules/hiberfil.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 sk-gcc/blash/blashmodules/butterfly.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/peceteN36640.A3 sk-gcc/blash/blashmodules/peceteN36640.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/cve.A3 sk-gcc/blash/blashmodules/cve.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/gougd.A3 sk-gcc/blash/blashmodules/gougd.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 sk-gcc/blash/blashmodules/maxinum.A3O
-	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 sk-gcc/blash/blashmodules/lazybum.A3O
 clean:
 	clear
 	$(Q)rm -rf $(BLASH_DIR)
 	$(Q)rm -rf CA3N.zip
-	$(Q)rm -rf sk-gcc/blash/$(BLASH_DIR)
-	$(Q)rm -rf sk-gcc/.json/directories.A3
-	$(Q)rm -rf sk-gcc/blash/blashmodules/butiwe.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/butterfly.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/cve.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/gougd.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/hiberfil.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/lazybum.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/maxinum.A3O
-	$(Q)rm -rf sk-gcc/blash/blashmodules/peceteN36640.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/$(BLASH_DIR)
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/.json/directories.A3
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/butiwe.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/butterfly.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/cve.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/gougd.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/hiberfil.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/lazybum.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/maxinum.A3O
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/blashmodules/peceteN36640.A3O
 	@echo "|==============================|"
 	@echo "|Ok, i removed everything here.|"
 	@echo "|==============================|"
@@ -133,10 +124,10 @@ comp:
 	$(Q)zip -r CA3N.zip $(BLASH_DIR)
 	@echo "Done!"
 mov:
-	$(Q)cp -r $(BLASH_DIR) sk-gcc/blash/$(BLASH_DIR)
+	$(Q)cp -r $(BLASH_DIR) $(HOME)/A3/sk-gcc/blash/$(BLASH_DIR)
 	$(Q)rm -rf $(BLASH_DIR)
-	@echo "Moved blash to sk-gcc/blash."
+	@echo "Moved blash to $(HOME)/A3/sk-gcc/blash."
 back:
-	$(Q)cp -r sk-gcc/blash/$(BLASH_DIR) $(BLASH_DIR)
-	$(Q)rm -rf sk-gcc/blash/$(BLASH_DIR)
+	$(Q)cp -r $(HOME)/A3/sk-gcc/blash/$(BLASH_DIR) $(BLASH_DIR)
+	$(Q)rm -rf $(HOME)/A3/sk-gcc/blash/$(BLASH_DIR)
 	@echo "Moved blash back to root."
