@@ -1,7 +1,7 @@
 include include/general.mak
-.PHONY: make all deploy files modules libs radical clean server s-connect comp mov back
+.PHONY: make all deploy files modules libs clean server s-connect comp mov back
 
-all: deploy files modules libs radical
+all: deploy files modules libs
 	@echo "|=======================|"
 	@echo "|Compact A3N Now in use.|"
 	@echo "|=======================|"
