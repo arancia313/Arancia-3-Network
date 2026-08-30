@@ -64,12 +64,7 @@ modules:
 	$(Q)cp sk-gcc/blash/blashmodules/hiberfil.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/hiberfil.A3
 	$(Q)cp sk-gcc/blash/blashmodules/butiwe.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butiwe.A3
 	@echo "copying Library files..."
-	$(Q)cp sk-gcc/blash/blashmodules/lazybum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/lazybum.A3
-	$(Q)cp sk-gcc/blash/blashmodules/peceteN36640.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/peceteN36640.A3
-	$(Q)cp sk-gcc/blash/blashmodules/maxinum.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/maxinum.A3
-	$(Q)cp sk-gcc/blash/blashmodules/butterfly.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/butterfly.A3
-	$(Q)cp sk-gcc/blash/blashmodules/cve.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/cve.A3
-	$(Q)cp sk-gcc/blash/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3
+	$(Q) $(MAKE) -C $(BLASH_OP)
 	@echo "Done."
 libs:
 	@echo "Initializing libraries..."
@@ -94,6 +89,7 @@ libs:
 	$(Q)mv $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/gougd.A3 $(BLASH_DIR)/home/user/configs/bhomhom/blashmodules/libremains/b5.A3
 	@echo "Done."
 	$(Q) $(MAKE) -C $(sk_gcc)
+	$(Q) $(MAKE) -C $(BLASH_OP)
 clean:
 	clear
 	$(Q)rm -rf $(BLASH_DIR)
