@@ -1,6 +1,9 @@
 include include/general.mak
 .PHONY: make all deploy files modules libs clean server s-connect comp mov back
-
+# hint: Please note that the announcements and server-esclusive things will be escluded from the blash,
+# hint: because they are server-esclusive. The Makefile will not contain those components.
+# hint: The makefile will only contain the components that sk-gcc uses. I'm not responsible
+# hint: if you edit this makefile or paste random code in it.
 all: deploy files modules libs
 	@echo "|=======================|"
 	@echo "|Compact A3N Now in use.|"
