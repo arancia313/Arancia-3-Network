@@ -10,46 +10,47 @@
         ],
     "admin_accounts": {
         "arancia_ahh": {
-            "name":      "arancia_ahh",
-            "userID":    "504498405304953859304958",
-            "rank":      "Owner"
+            "name": "arancia_ahh",
+            "userID": "504498405304953859304958",
+            "rank": 5
         },
         "pecete_dev": {
-            "name":      "pecete_dev",
-            "userID":    "234879543893547894893575",
-            "rank":      "HeadAdmin"
+            "name": "pecete_dev",
+            "userID": "234879543893547894893575",
+            "rank": 4
         }
     },
     "bots": {
         "A3N": {
-            "name":      "A3N[bot]",
-            "userID":    "010101010101010101010101",
-            "mcdkID":    "mcdk[0101010101010101010]",
-            "rank":      "Non-Admin"
+            "name": "A3N[bot]",
+            "userID": "010101010101010101010101",
+            "mcdkID": "mcdk[0101010101010101010]",
+            "rank": 0
         },
         "celdrone": {
-            "name":      "celdrone[bot]",
-            "userID":    "234798573584375987589734",
-            "mcdkID":    "mcdk[4837548545785752897]",
-            "rank":      "Non-Admin"
+            "name": "celdrone[bot]",
+            "userID": "234798573584375987589734",
+            "mcdkID": "mcdk[4837548545785752897]",
+            
+            "rank": 0
         },
         "ostash": {
-            "name":      "ostash[bot]",
-            "userID":    "342582438747743793271374",
-            "mcdkID":    "mcdk[2191912948793424789]",
-            "rank":      "Non-Admin"
+            "name": "ostash[bot]",
+            "userID": "342582438747743793271374",
+            "mcdkID": "mcdk[2191912948793424789]",
+            "rank": 0
         },
         "Service-1": {
-            "name":      "Service-2[bot]",
-            "userID":    "381432841348920420983902",
-            "mcdkID":    "mcdk[748574858794892838]",
-            "rank":      "Non-Admin"
+            "name": "Service-2[bot]",
+            "userID": "381432841348920420983902",
+            "mcdkID": "mcdk[748574858794892838]",
+            "rank": 0
         },
         "Service-2": {
-            "name":      "Service-2[bot]",
-            "userID":    "348095348543853489958858",
-            "mcdkID":    "mcdk[234435332453454445]",
-            "rank":      "Non-Admin"
+            "name": "Service-2[bot]",
+            "userID": "348095348543853489958858",
+            "mcdkID": "mcdk[234435332453454445]",
+            "rank": 0
         }
     } 
   }
