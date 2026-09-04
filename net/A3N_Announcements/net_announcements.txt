@@ -8,4 +8,4 @@ Arancia 3 Has basically entered in "surgery mode"!
 There's now a new separate section for the A3N Announcements,
 the HTML file was deflated, separated and synced with some css and mjs files!
 He is literally planning to take away mid platform and make BarnyShare as lightweight
-as possible, without all the junk from BarnyWarp!
+as possible, without all the junk from Classic BarnyWarp!
