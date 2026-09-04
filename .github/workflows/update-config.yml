@@ -1,0 +1,24 @@
+name: Server User Update
+on:
+  repository_dispatch:
+  types: [update_users]
+jobs:
+update:
+  runs-on: ubuntu-latest
+  permissions:
+  contents: write
+steps:
+- name:  Checkout
+  uses:  actions/checkout@v4
+
+- name: write new data
+run: |
+echo "${{ github-event.client_payload.new_data }}" > users.json
+
+- name: Commit & Push
+run: |
+  git config --global user.name "[A3N]"
+  git config --global user.email "arancia3networkserviceprovider@a3services.local"
+  git add users.json
+  git commit -m "Someone joined Arancia 3 Network!"
+  git push
