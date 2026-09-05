@@ -9,7 +9,6 @@ all: deploy files modules libs
 	@echo "|Compact A3N Now in use.|"
 	@echo "|=======================|".
 deploy:
-	clear
 	@echo "Logical blash Rendering..."
 	$(Q)mkdir -p $(BLASH_DIR)
 	$(Q)mkdir -p $(BLASH_DIR)/store
@@ -96,7 +95,6 @@ libs:
 	@echo "Preparing A3N Live..."
 	$(Q)cp -r live $(HOME)/A3/b/live
 clean:
-	clear
 	$(Q)rm -rf $(BLASH_DIR)
 	$(Q)rm -rf CA3N.zip
 	$(Q)rm -rf $(sk_gcc)/blash/$(BLASH_DIR)
