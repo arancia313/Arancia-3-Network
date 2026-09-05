@@ -1,0 +1,16 @@
+on:
+  push:
+    branches: [System]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: A3N Git Configuration
+        run: |
+            git config --global user.name "[A3N]"
+            git config --global user.email "arancia3networkserviceprovider@a3services.local"
+            git add .
+            git commit -m "Arancia 3 Technologies just pushed."
+            git push
