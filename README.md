@@ -67,6 +67,7 @@ This is very simple for some windows 10 and 11 users, but it's a bit tough for u
               ./make.exe
  To clean up everything, you need to execute those commands:
 For windows 11 users: make clean | For windows 7 or older users: ./make.exe clean.
+You will literally unlock some more features, like the new A3N Live.
 ## A store without life
 There is a games.txt file, and it is vital for the store. If it doesn't contain "A3S", the games
 will stop showing up, the instances will stop working, and if you reload the store, no matter what,
