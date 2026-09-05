@@ -1,7 +1,5 @@
-Guess what is in development?
-Deadlines are now coming to Arancia 3 Network!
-You'll just see on Penguinmod what will happen. Of course.
-I inserted some files about that!
+There's a new feature now in development:
+We're now introducing A3N Live!
 ----------------------------------------------------------
 In the meanwhile, BarnyShare is getting several modifications.
 Arancia 3 Has basically entered in "surgery mode"!
