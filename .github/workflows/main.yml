@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: users.json Validation
-        run: python3 -c "import json; json load(open('users.json'))"
+        run: python3 -c "import json; json.load(open('users.json'))"
       - name: A3N Git Configuration
         run: |
             git config --global user.name "[A3N]"
