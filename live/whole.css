@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+h1 {
+    color: orangered;
+    text-align: center;
+}

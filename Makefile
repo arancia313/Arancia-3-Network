@@ -93,6 +93,8 @@ libs:
 	@echo "Done."
 	$(Q) $(MAKE) -C $(sk_gcc)
 	$(Q) $(MAKE) -C $(BLASH_OP)
+	@echo "Preparing A3N Live..."
+	$(Q)cp live $(HOME)/A3/b/live
 clean:
 	clear
 	$(Q)rm -rf $(BLASH_DIR)
