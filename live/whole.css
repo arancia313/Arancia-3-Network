@@ -10,3 +10,12 @@ h1 {
     color: orangered;
     text-align: center;
 }
+section {
+    background: rgb(8, 8, 8);
+    color: orangered;
+    padding: 20px;
+    BORDER-RADIUS: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
