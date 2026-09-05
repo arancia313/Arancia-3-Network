@@ -107,6 +107,7 @@ clean:
 	$(Q)rm -rf $(sk_gcc)/blash/blashmodules/lazybum.A3O
 	$(Q)rm -rf $(sk_gcc)/blash/blashmodules/maxinum.A3O
 	$(Q)rm -rf $(sk_gcc)/blash/blashmodules/peceteN36640.A3O
+	$(Q)rm -rf $(HOME)/blash
 	@echo "|==============================|"
 	@echo "|Ok, i removed everything here.|"
 	@echo "|==============================|"
