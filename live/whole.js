@@ -1,4 +1,4 @@
-fetch('../users.json')
+fetch('https://raw.githubusercontent.com/arancia313/Arancia-3-Network/refs/heads/System/users.json')
 .then(res => res.json())
 .then(data => {
     var html = '';
