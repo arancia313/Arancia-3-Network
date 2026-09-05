@@ -1,5 +1,7 @@
 body {
-    background-color: black;
+    flex-direction: column;
+    background: linear-gradient(black, rgb(8, 0, 53));
+    background-attachment: fixed;
     color: orangered;
     align-items: center;
     text-align: center;
@@ -7,14 +9,18 @@ body {
     font-family: sans-serif;
 }
 h1 {
-    color: orangered;
+    background: linear-gradient(orangered, rgb(238, 255, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 section {
-    background: rgb(8, 8, 8);
+    background: linear-gradient(#0b0047, #000000);
     color: orangered;
     padding: 20px;
+    margin: 10;
     BORDER-RADIUS: 20px;
+    border-color: orangered;
     align-items: center;
     text-align: center;
     margin-top: 60px;
