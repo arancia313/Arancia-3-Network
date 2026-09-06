@@ -38,3 +38,15 @@ section {
     text-align: center;
     margin-top: 60px;
 }
+.section-3 {
+    background: linear-gradient(#0b0047, #000000);
+    color: orangered;
+    padding: 20px;
+    margin: 10;
+    BORDER-RADIUS: 20px;
+    border-color: orangered;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
