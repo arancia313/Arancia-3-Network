@@ -1,0 +1,2 @@
+    const storeID = '32489724892345934'; const store_number = 33; const ishkt = '350279849'; const games = [
+    {name: "Incredibox - Smart Hub Kuh treatment", gameID: ishkt, storeID: storeID, store_number: store_number}]
