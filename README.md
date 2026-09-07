@@ -11,6 +11,7 @@
 major firmware (1.50) rather than the current firmware (1.00), the A3S will
 instantly detect it and will show a notification at start: "New Version Available!".
  - Never goes down.
+ - uses a native store that you can use either on the A3S or the web.
 <img width="476" height="353" alt="Cattura" src="https://github.com/user-attachments/assets/b6b973d0-1a8a-4a73-bc69-f4dfaedc199a" />
 <img width="474" height="356" alt="Cattura2" src="https://github.com/user-attachments/assets/ed6d72cd-99f1-4854-bbeb-d2604ed17d7f" />
 
