@@ -1,5 +1,5 @@
 # <img width="480" height="80" alt="costume2" src="https://github.com/user-attachments/assets/c7eee087-8b5f-4ad3-8770-cb86605444bc" />
-
+# KEEP IN MIND, THAT THE A3S IS STILL UNDER DEVELOPMENT AND IT'S NOT OFFICIALLY RELEASED YET.
  - Newest updated network for the A3S (Arancia 3 System) and projects that use the Fetch or Git Penguin extension.
  - Can be used with the Arancia 3 Store.
  - Requires the Fetch extension on projects with Penguinmod.
