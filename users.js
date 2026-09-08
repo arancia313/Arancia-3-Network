@@ -1,7 +1,7 @@
     const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2}; const users = [ // For the users.
-    {id: 1, name: "Arancia_Carnivora", onlineID: "Arancia_Carnivora", rank: ranks.Owner, status: "offline", hash: "#0", permissions: permissions = "write", content: "hidden", ccj: ccj}, 1,
-    {id: 2, name: "arancia_ahh", onlineID:  "arancia_ahh", rank: ranks.Owner, status: "online", hash: "#1", permissions: permissions = "write", ccj: ccj}, 2,
-    {id: 3, name: "pecete dev", onlineID: "pecete_dev", rank: ranks.HeadAdmin, status: "offline", hash: "#2", permissions: permissions = "ban", ccj: ccj}, 3,
+    {id: 1, name: "Arancia_Carnivora", onlineID: "Arancia_Carnivora", rank: ranks.Owner, status: "offline", hash: "#0", permissions: permissions.write, content: "hidden", ccj: ccj}, 1,
+    {id: 2, name: "arancia_ahh", onlineID:  "arancia_ahh", rank: ranks.Owner, status: "online", hash: "#1", permissions: permissions.write, ccj: ccj}, 2,
+    {id: 3, name: "pecete dev", onlineID: "pecete_dev", rank: ranks.HeadAdmin, status: "offline", hash: "#2", permissions: permissions.ban, ccj: ccj}, 3,
     {id: 4, name: "arancia313", onlineID: "arancia313", rank: ranks.Owner, status: "offline", hash: "#3", permissions: permissions.none, ccj: ccj}, 4,
     {id: 5, name: "Player 3365", onlineID: "player3365", rank: ranks[3], status: "offline", hash: "#4", permissions: permissions.none, ccj: ccj}, 5,
     {id: 6, name: "someone", onlineID: "someone", rank: ranks[1], status: "offline", hash: "#5", permissions: permissions.none, ccj: ccj}, 6,
