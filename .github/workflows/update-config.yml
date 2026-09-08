@@ -11,7 +11,7 @@ jobs:
       - name:  Checkout
         uses:  actions/checkout@v4
       - name: write new data
-        run: echo '${{ github.event.client_payload.new_data }}' > users.json
+        run: echo '${{ github.event.client_payload.new_data }}' > users.js
       - name: Commit & Push
         run: |
          git config --global user.name "[A3N]"
