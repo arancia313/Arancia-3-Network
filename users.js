@@ -1,4 +1,4 @@
-    const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2}; console.log('Response from Arancia 3\'s Server. Usernames are loaded properly.'); const users = [ // For the users.
+    const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2}; console.log('Response from Arancia 3\'s Server. User objects are loaded properly.'); const users = [ // For the users.
     {id: 1, name: "Arancia_Carnivora", onlineID: "Arancia_Carnivora", rank: ranks.Owner, status: "offline", hash: "#0", permissions: permissions.write, content: "hidden", ccj: ccj}, 1,
     {id: 2, name: "arancia_ahh", onlineID:  "arancia_ahh", rank: ranks.Owner, status: "online", hash: "#1", permissions: permissions.write, ccj: ccj}, 2,
     {id: 3, name: "pecete dev", onlineID: "pecete_dev", rank: ranks.HeadAdmin, status: "offline", hash: "#2", permissions: permissions.ban, ccj: ccj}, 3,
