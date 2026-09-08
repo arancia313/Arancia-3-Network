@@ -1,3 +1,4 @@
+    alert('Aoo!')
     const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2}; const users = [ // For the users.
     {id: 1, name: "Arancia_Carnivora", onlineID: "Arancia_Carnivora", rank: ranks.Owner, status: "offline", hash: "#0", permissions: permissions = "write", content: "hidden", ccj: ccj}, 1,
     {id: 2, name: "arancia_ahh", onlineID:  "arancia_ahh", rank: ranks.Owner, status: "online", hash: "#1", permissions: permissions = "write", ccj: ccj}, 2,
