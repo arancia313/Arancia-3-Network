@@ -61,7 +61,7 @@ if ( /* We are all set in this one.*/ lock == true) {
 // Ok, ok. Let's get into the REAL code. Those 3 lines go to the console, and console.log() goes to the console and displays your hash.
 const hash = "#" + Math.random(100 -100);
 console.log("Starting Shell with A3N Live hash:", hash);
-document.getElementById("hash").innerText = hash;
+document.getElementById("hash").innerHTML = hash;
 /*
    hint: should NOT touch those.
    hint: Anyways, they get the URL of some raw files of the network, just to connect to it. 
@@ -69,9 +69,9 @@ document.getElementById("hash").innerText = hash;
    hint: and it uses the "raw.githubusercontent.com" algoritm.
 */
 const url = "https://raw.githubusercontent.com/arancia313/Arancia-3-Network/refs/heads/System/net/A3N_Announcements/net_announcements.txt";
-fetch(url).then(r=>r.text()).then(t=>document.getElementById("view").innerText=t);
+fetch(url).then(r=>r.text()).then(t=>document.getElementById("view").innerHTML=t);
 const url2 = "https://raw.githubusercontent.com/arancia313/Arancia-3-Network/refs/heads/System/net/platform_updates/A3N_Live/updates.txt";
-fetch(url2).then(r=>r.text()).then(t=>document.getElementById("pa").innerText=t);
+fetch(url2).then(r=>r.text()).then(t=>document.getElementById("pa").innerHTML=t);
 fetch("https://raw.githubusercontent.com/arancia313/Arancia-3-Network/refs/heads/System/users.js").then(r => r.text()).then(eval);
 // Here are some if conditions.
 if (extended == true) {

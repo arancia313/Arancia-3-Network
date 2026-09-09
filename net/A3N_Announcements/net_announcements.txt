@@ -1,4 +1,4 @@
-There's a new feature now in development:
+<h1>There's a new feature now in development.<h1>
 We're now introducing A3N Live!
 ----------------------------------------------------------
 In the meanwhile, BarnyShare is getting several modifications.
