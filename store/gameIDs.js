@@ -1,46 +1,4 @@
-const formatted = JSON.parse(
-    {
-    "storeID": {"name": "Arancia 3 Store","storeID": "32489724892345934"},
-    "games": {"store_number": 33,
-        "ISHKT": {
-            "name": "Incredibox - Smart Hub Kuh treatment",
-            "gameID": "350279849",
-            "storeID": "32489724892345934",
-            "store_number": 33
-        },
-        "OBR": {
-            "name": "Oran's Bay: RP Remastered",
-            "gameID": "495304495",
-            "storeID": "32489724892345934",
-            "store_number": 33
-        },
-        "ISH": {
-            "name": "Incredibox - Smart Hub",
-            "gameID": "894298471",
-            "storeID": "32489724892345934",
-            "store_number": 33
-        },
-        "OB": {
-            "name": "Oran's Bay: RP",
-            "gameID": "487873538",
-            "storeID": "32489724892345934",
-            "store_number": 33
-        },
-        "A3D": {
-            "name": "Arancia 3's Demo",
-            "gameID": "809340235",
-            "storeID": "32489724892345934",
-            "store_number": 33
-        },
-        "SCR": {
-            "name": "Scratch Cats's Road",
-            "gameID": "723489535",
-            "storeID": "32489724892345934",
-            "store_number": 33
-            }
-        }
-    }
-)
+const formatted = JSON.parse('{"storeID": {"name": "Arancia 3 Store","storeID": "32489724892345934"}')
 let storeID = formatted.storeID.storeID
 console.log('Response from Arancia 3\'s server. Games are loaded properly.');
 console.log('current storeID: ' + storeID)
