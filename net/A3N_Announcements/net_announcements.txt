@@ -1,10 +1,10 @@
 <h2>There's a new feature now in development.</h2>
 <p>
-We're now introducing A3N Live!
-In the meanwhile, BarnyShare is getting several modifications.
-Arancia 3 Has basically entered in "surgery mode"!
-There's now a new separate section for the A3N Announcements,
-the HTML file was deflated, separated and synced with some css and mjs files!
-He is literally planning to take away mid platform and make BarnyShare as lightweight
-as possible, without all the junk from Classic BarnyWarp!
+<br>We're now introducing A3N Live!</br>
+<br>In the meanwhile, BarnyShare is getting several modifications.</br>
+<br>Arancia 3 Has basically entered in "surgery mode"!</br>
+<br>There's now a new separate section for the A3N Announcements,</br>
+<br>the HTML file was deflated, separated and synced with some css and mjs files!</br>
+<br>He is literally planning to take away mid platform and make BarnyShare as lightweight</br>
+<br>as possible, without all the junk from Classic BarnyWarp!</br>
 </p>
