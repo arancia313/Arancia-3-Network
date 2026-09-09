@@ -21,3 +21,4 @@
     {id: "@+" + 10, name: "player5934", onlineID: "player5934", rank: ranks[0], status: "offline", hash: "#+9", permissions: permissions.none, ccj: ccj}, '@' + 10,
     {id: "@+" + 11, name: "player4932", onlineID: "player4932", rank: ranks[0], status: "offline", hash: "#+10", permissions: permissions.none, ccj: ccj}, '@' + 11,
     {id: "@+" + 12, name: "arancia3network-actions[bot]", onlineID: "a3n-actions[bot]", rank: ranks[2], status: "offline", hash: "#+11", permissions: permissions.none, ccj: ccj}, '@' + 12]
+    const formatted = JSON.stringify(users); const formatted2 = JSON.stringify(bots); console.log('Response from Arancia 3\'s server. The users have been stringified and converted to JSON.')
