@@ -36,15 +36,15 @@ let alerthash = formatted.settings.alert_hash; let preventhib = formatted.settin
 let lock = formatted.settings.lock; let lazybum = formatted.libraries.lazybum.activate;
 let maxinum = formatted.libraries.maxinum.activate; let peceteN36640 = formatted.libraries.peceteN36640.activate;
 let extended = formatted.settings.extended; let num1 = formatted2.num1
-// You can edit what the settings say here.
+// You can edit what the settings say here. It will be a bit long.
 document.getElementById("settings").textContent = "butiwe: " + butiwe + ". cve: " + cve + ". butterfly: " + butterfly + ". lazybum: " + lazybum + ". maxinum: " + maxinum + ". pecete Network: " + peceteN36640 + "."
 // Let's just make a function, so that we make the process compact.
 async function onstack(){
     if (logelement == true) {
     // Now, let's get into the console. This is disabled by default for not bothering the console. Just change the log thing on the json thing to be set to true.
-    console.log("Butiwe is " + butiwe + ".")
-    console.log("Butterfly is " + butterfly + ".")
-    console.log("cve is " + cve + ".")  
+    console.log(/* The butiwe library. */ "Butiwe is " + butiwe + ".")
+    console.log(/* The butterfly library. */ "Butterfly is " + butterfly + ".")
+    console.log(/* The cve library. */ "cve is " + cve + ".")  
     }
 }
 /* Let's make the lock thing OUT OF THE FUNCTION, or else
@@ -63,8 +63,10 @@ const hash = "#" + Math.random(100 -100);
 console.log("Starting Shell with A3N Live hash:", hash);
 document.getElementById("hash").innerText = hash;
 /*
-   hint: should NOT touch those. Anyways, they get the URL of some raw files of the network, just to connect to it. 
-   hint: This is called "Network Connecting",  and it uses the "raw.githubusercontent.com" algoritm.
+   hint: should NOT touch those.
+   hint: Anyways, they get the URL of some raw files of the network, just to connect to it. 
+   hint: This is called "Network Connecting",
+   hint: and it uses the "raw.githubusercontent.com" algoritm.
 */
 const url = "https://raw.githubusercontent.com/arancia313/Arancia-3-Network/refs/heads/System/net/A3N_Announcements/net_announcements.txt";
 fetch(url).then(r=>r.text()).then(t=>document.getElementById("view").innerText=t);
