@@ -2,15 +2,36 @@
     hint: I use comments to help you identify the function and the algorithm of this JavaScript code.
     hint: Now, let's just get into it. an editor with dark mode is reccomended for editing this file.
 */
-// Those are settings. You can literally modify them. You can even activate libraries.
-const set = '{"libraries":{"butiwe":{"activate":true},"cve":{"activate":true},"butterfly":{"activate":true}},"settings":{"log":false}}'
+// Those are settings. You can literally modify them. You can even activate or disable libraries.
+const set = `{
+    "libraries":{
+        "butiwe":{
+            "activate":true
+        },
+        "cve":{
+            "activate":true
+        },
+        "butterfly":{
+            "activate":true
+        }
+    },
+    "settings":{
+        "log":false,
+        "alert_hash":false,
+        "preventhib":false,
+        "lock":false
+    }
+}`
 // I'm leaving this comment here to prevent you from accidentally editing the code on the bottom.
 const formatted = JSON.parse(set);
 // Do NOT edit those, they are custom JavaScript strings from the parsed JSON strings that i made for them to sync.
-let butiwe = formatted.libraries.butiwe.activate
-let cve = formatted.libraries.cve.activate
-let butterfly = formatted.libraries.butterfly.activate
-let logelement = formatted.settings.log
+let butiwe = formatted.libraries.butiwe.activate;
+let cve = formatted.libraries.cve.activate;
+let butterfly = formatted.libraries.butterfly.activate;
+let logelement = formatted.settings.log;
+let alerthash = formatted.settings.alert_hash;
+let preventhib = formatted.settings.preventhib;
+let lock = formatted.settings.lock;
 // You can edit what the settings say here.
 document.getElementById("settings").textContent = "butiwe: " + butiwe + ". cve: " + cve + ". butterfly: " + butterfly + "."
 // Ok, ok. Let's get into the REAL code. Those 3 lines go to the console, and console.log() goes to the console and displays your hash.
@@ -31,4 +52,10 @@ if (logelement == true) {
     console.log("Butiwe is " + butiwe + ".")
     console.log("Butterfly is " + butterfly + ".")
     console.log("cve is " + cve + ".")  
+}
+if (lock == true) {
+    console.log("A3N Locked.")
+    document.body.innerHTML = `
+        <h1>A3N Live is unavailable.</h1>
+        <p>A3N Live was blocked by the administrator.</p>`
 }
