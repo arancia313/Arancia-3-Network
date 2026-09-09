@@ -1,4 +1,4 @@
-    const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2}; console.log('Response from Arancia 3\'s Server. User objects are loaded properly.'); const users = [ // For the users.
+    const ccj = "ccj" + 8; const ranks = ["Non-Admin", "VIP", "Mod", "Admin", "HeadAdmin", "Owner"]; const permissions = {"none": 0, "ban": 1, "write": 2, "email": 3}; console.log('Response from Arancia 3\'s Server. User objects are loaded properly.'); const users = [ // For the users.
     {id: 1, name: "Arancia_Carnivora", onlineID: "Arancia_Carnivora", rank: ranks.Owner, status: "offline", hash: "#0", permissions: permissions.write, content: "hidden", ccj: ccj}, 1,
     {id: 2, name: "arancia_ahh", onlineID:  "arancia_ahh", rank: ranks.Owner, status: "online", hash: "#1", permissions: permissions.write, ccj: ccj}, 2,
     {id: 3, name: "pecete dev", onlineID: "pecete_dev", rank: ranks.HeadAdmin, status: "offline", hash: "#2", permissions: permissions.ban, ccj: ccj}, 3,
@@ -19,4 +19,5 @@
     {id: "@+" + 8, name: "ghost", onlineID: "ghost_", rank: ranks[3], status: "offline", hash: "#+7", permissions: permissions.none, ccj: ccj}, '@' + 8,
     {id: "@+" + 9, name: "player4894", onlineID: "player4894", rank: ranks[0], status: "offline", hash: "#+8", permissions: permissions.none, ccj: ccj}, '@' + 9,
     {id: "@+" + 10, name: "player5934", onlineID: "player5934", rank: ranks[0], status: "offline", hash: "#+9", permissions: permissions.none, ccj: ccj}, '@' + 10,
-    {id: "@+" + 11, name: "player4932", onlineID: "player4932", rank: ranks[0], status: "offline", hash: "#+10", permissions: permissions.none, ccj: ccj}, '@' + 11]
+    {id: "@+" + 11, name: "player4932", onlineID: "player4932", rank: ranks[0], status: "offline", hash: "#+10", permissions: permissions.none, ccj: ccj}, '@' + 11,
+    {id: "@+" + 12, name: "arancia3network-actions[bot]", onlineID: "a3n-actions[bot]", rank: ranks[2], status: "offline", hash: "#+11", permissions: permissions.none, ccj: ccj}, '@' + 12]
