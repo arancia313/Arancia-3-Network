@@ -50,3 +50,10 @@ section {
     text-align: center;
     margin-top: 60px;
 }
+button {
+    color: aliceblue;
+    background: black;
+    border-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
