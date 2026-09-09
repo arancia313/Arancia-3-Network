@@ -1,4 +1,5 @@
-const formatted = JSON.parse({
+const formatted = JSON.parse(
+    {
     "storeID": {"name": "Arancia 3 Store","storeID": "32489724892345934"},
     "games": {"store_number": 33,
         "ISHKT": {
