@@ -33,6 +33,6 @@ mcdk = [
               {ml32:'0'},
               {ml33:'0'},
               {ml34:'0'}
-]
-              console.log("mcdk is: " + mcdk[0].ml)
+];
+              console.log("MCDK List: " + mcdk[0].ml + mcdk[1].ml2);
 // Those keys are all set to 0.
