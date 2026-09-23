@@ -1,12 +1,13 @@
 name: A3N
   on:
     jobs:
-      - name: Making blash
-        run: make
-      - name: Arancia 3 Network Service Provider Test
-        run: |
-          git config --global user.email "arancia3networkserviceprovider@a3services.local"
-          git config --global user.name "Arancia 3 Network Service Provider [TEST]"
-          git add .
-          git commit -m "Aoo!"
-          git push
+      steps:
+        - name: Making blash
+          run: make
+        - name: Arancia 3 Network Service Provider Test
+          run: |
+            git config --global user.email "arancia3networkserviceprovider@a3services.local"
+            git config --global user.name "Arancia 3 Network Service Provider [TEST]"
+            git add .
+            git commit -m "Aoo!"
+            git push
