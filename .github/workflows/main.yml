@@ -1,6 +1,8 @@
 name: A3N
   on:
     jobs:
+      runs-on: ubuntu-latest
+      uses: actions/checkout@v4
       steps:
         - name: Making blash
           run: make
