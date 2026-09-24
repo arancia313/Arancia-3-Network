@@ -1,5 +1,6 @@
-# Arancia-3-Network
-
+# <img width="480" height="80" alt="costume2" src="https://github.com/user-attachments/assets/c7eee087-8b5f-4ad3-8770-cb86605444bc" />
+# KEEP IN MIND, THAT THE A3S IS STILL UNDER DEVELOPMENT AND IT'S NOT OFFICIALLY RELEASED YET.
+# But, don't worry, the Network works fine, but is is also under development.
  - Newest updated network for the A3S (Arancia 3 System) and projects that use the Fetch or Git Penguin extension.
  - Can be used with the Arancia 3 Store.
  - Requires the Fetch extension on projects with Penguinmod.
@@ -11,6 +12,7 @@
 major firmware (1.50) rather than the current firmware (1.00), the A3S will
 instantly detect it and will show a notification at start: "New Version Available!".
  - Never goes down.
+ - uses a native store that you can use either on the A3S or the web.
 <img width="476" height="353" alt="Cattura" src="https://github.com/user-attachments/assets/b6b973d0-1a8a-4a73-bc69-f4dfaedc199a" />
 <img width="474" height="356" alt="Cattura2" src="https://github.com/user-attachments/assets/ed6d72cd-99f1-4854-bbeb-d2604ed17d7f" />
 
@@ -42,13 +44,13 @@ because they do not have the commands to make host for the server.
               git clone https://github.com/arancia313/Arancia-3-Network
 Then, execute this command:
               make clean && make server
-This command will connect you to localhost:30003.
+This command will radically remove the blash and connect you to localhost:30003.
 
 #### Arancia 3 focusing to the clients
 
 You just need to have a terminal (Make sure to have the WSL one, and not the classic CMD one!).
 you need to execute this command:
-              nc localhost 30003
+              make s-connect
 This will connect you to localhost:30003, just like you would expect.
 ## How to connect to the network (on the A3S)
 Very simple. You just need to go to the Arancia 3 Network category (that orange icon with the star).
@@ -67,6 +69,7 @@ This is very simple for some windows 10 and 11 users, but it's a bit tough for u
               ./make.exe
  To clean up everything, you need to execute those commands:
 For windows 11 users: make clean | For windows 7 or older users: ./make.exe clean.
+You will literally unlock some more features, like the new A3N Live.
 ## A store without life
 There is a games.txt file, and it is vital for the store. If it doesn't contain "A3S", the games
 will stop showing up, the instances will stop working, and if you reload the store, no matter what,
