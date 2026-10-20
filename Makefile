@@ -57,8 +57,6 @@ modules:
 	$(Q)cp $(sk_gcc)/devices.A3 $(BLASH_DIR)/sys/A3_modules/supported_devices.txt
 	$(Q)cp $(sk_gcc)/ehshell.txt $(BLASH_DIR)/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 $(BLASH_DIR)/home/user/stubmodules/bshell_stub.A3
-	$(Q)cp cel/celnum.txt $(BLASH_DIR)/home/user/cel/celnum.txt
-	$(Q)cp cel/celim.txt $(BLASH_DIR)/home/user/cel/celim.txt
 	$(Q)cp bhome/bmod.A3 $(BLASH_DIR)/home/user/configs/bhomhom/bmod.A3
 	$(Q)cp bhome/bshell.A3 $(BLASH_DIR)/home/user/configs/bhomhom/bshell.A3
 	$(Q)cp net/log.txt $(BLASH_DIR)/sys/net/logs/log.txt
