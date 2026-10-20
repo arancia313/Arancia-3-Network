@@ -93,7 +93,7 @@ libs:
 	$(Q) $(MAKE) -C $(sk_gcc)
 	$(Q) $(MAKE) -C $(BLASH_OP)
 	@echo "Preparing A3N Live..."
-	$(Q)cp -r live $(HOME)/A3/b/live
+	$(Q)cp -r live $(HOME)/A3/b/A3N_Live
 clean:
 	$(Q)rm -rf $(BLASH_DIR)
 	$(Q)rm -rf CA3N.zip
