@@ -122,10 +122,9 @@ comp:
 	$(Q)zip -r CA3N.zip $(BLASH_DIR)
 	@echo "Done!"
 mov:
-	$(Q)cp -r $(BLASH_DIR) $(BLASH_OP)/$(BLASH_DIR)
+	$(Q)cp -r $(BLASH_DIR) $(BLASH_OP)
 	$(Q)rm -rf $(BLASH_DIR)
 	@echo "Moved blash to $(sk_gcc)/blash."
 back:
-	$(Q)cp -r $(HOME)/blash/$(BLASH_DIR) $(BLASH_DIR)
-	$(Q)rm -rf $(HOME)/blash/$(BLASH_DIR)
+	$(Q)mv  $(sk_gcc)/blash/b $(BLASH_DIR)
 	@echo "Moved blash back to root."
