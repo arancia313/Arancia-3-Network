@@ -1,0 +1,69 @@
+body {
+    flex-direction: column;
+    background: linear-gradient(black, rgb(0, 0, 0));
+    background-attachment: fixed;
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h1 {
+    color:white;
+    text-align: center;
+}
+section {
+    background: linear-gradient(#0b0047, #000000);
+    color: orangered;
+    padding: 20px;
+    margin: 10;
+    BORDER-RADIUS: 20px;
+    border-color: orangered;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.section-2 {
+    background: linear-gradient(#0b0047, #000000);
+    color: orangered;
+    padding: 20px;
+    margin: 10;
+    BORDER-RADIUS: 20px;
+    border-color: orangered;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.section-3 {
+    background: linear-gradient(#0b0047, #000000);
+    color: orangered;
+    padding: 20px;
+    margin: 10;
+    BORDER-RADIUS: 20px;
+    border-color: orangered;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.section-4 {
+    background: linear-gradient(#0b0047, #000000);
+    color: orangered;
+    padding: 20px;
+    margin: 10;
+    BORDER-RADIUS: 20px;
+    border-color: orangered;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+button {
+    color: aliceblue;
+    background: black;
+    border-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}

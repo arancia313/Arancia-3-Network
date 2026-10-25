@@ -1,0 +1,7 @@
+{
+    "sets": {
+        "certification": true,
+        "store": true,
+        "netannouncements": true
+    }
+}
