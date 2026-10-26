@@ -36,8 +36,6 @@ deploy:
 	$(Q)mkdir -p $(BLASH_DIR)/home/user/configs/libs/peceteN36640
 	$(Q)mkdir -p $(BLASH_DIR)/home/user/configs/libs/cve
 	$(Q)mkdir -p $(BLASH_DIR)/home/user/configs/libs/gougd
-	@echo "Linking suggestion..."
-	$(Q)cp configs/suggestion.txt $(BLASH_DIR)/suggestion.txt
 	@echo "Done."
 files:
 	@echo "Flashing files..."
