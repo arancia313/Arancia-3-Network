@@ -1,4 +1,4 @@
- 'use strict';
+'use strict';
 /*
     hint: I use comments to help you identify the function and the algorithm of this JavaScript code.
     hint: Now, let's just get into it. an editor with dark mode is reccomended for editing this file.
