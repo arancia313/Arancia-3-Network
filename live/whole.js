@@ -30,12 +30,12 @@ const references =
 // I'm leaving this comment here to prevent you from accidentally editing the code on the bottom.
 const formatted = JSON.parse(set); const formatted2 = JSON.parse(references)
 // Do NOT edit those, they are custom JavaScript strings from the parsed JSON strings that i made for them to sync.
-let butiwe = formatted.libraries.butiwe.activate; let cve = formatted.libraries.cve.activate;
+let butiwe = formatted.libraries.butiwe.activate;       let cve = formatted.libraries.cve.activate;
 let butterfly = formatted.libraries.butterfly.activate; let logelement = formatted.settings.log;
-let alerthash = formatted.settings.alert_hash; let preventhib = formatted.settings.preventhib;
-let lock = formatted.settings.lock; let lazybum = formatted.libraries.lazybum.activate;
-let maxinum = formatted.libraries.maxinum.activate; let peceteN36640 = formatted.libraries.peceteN36640.activate;
-let extended = formatted.settings.extended; let num1 = formatted2.num1
+let alerthash = formatted.settings.alert_hash;          let preventhib = formatted.settings.preventhib;
+let lock = formatted.settings.lock;                     let lazybum = formatted.libraries.lazybum.activate;
+let maxinum = formatted.libraries.maxinum.activate;     let peceteN36640 = formatted.libraries.peceteN36640.activate;
+let extended = formatted.settings.extended;             let num1 = formatted2.num1
 // You can edit what the settings say here. It will be a bit long.
 document.getElementById("settings").textContent = "butiwe: " + butiwe + ". cve: " + cve + ". butterfly: " + butterfly + ". lazybum: " + lazybum + ". maxinum: " + maxinum + ". pecete Network: " + peceteN36640 + "."
 // Let's just make a function, so that we make the process compact.
