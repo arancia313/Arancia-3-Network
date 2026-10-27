@@ -53,7 +53,6 @@ modules:
 	$(Q)cp net/statistics/ping.A3 $(BLASH_DIR)/sys/net/statistics/ping.txt
 	$(Q)cp net/statistics/games.A3 $(BLASH_DIR)/sys/net/games.txt
 	$(Q)cp $(sk_gcc)/devices.A3 $(BLASH_DIR)/sys/A3_modules/supported_devices.txt
-	$(Q)cp $(sk_gcc)/ehshell.txt $(BLASH_DIR)/home/user/configs/eltra/ehshell.txt
 	$(Q)cp ipynb_stubmodules/bshell_stubmodule.A3 $(BLASH_DIR)/home/user/stubmodules/bshell_stub.A3
 	$(Q)cp bhome/bmod.A3 $(BLASH_DIR)/home/user/configs/bhomhom/bmod.A3
 	$(Q)cp bhome/bshell.A3 $(BLASH_DIR)/home/user/configs/bhomhom/bshell.A3
