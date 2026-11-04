@@ -5,7 +5,7 @@ include $(SK)/include/general.mak
 # hint: because they are server-esclusive. The Makefile will not contain those components.
 # hint: The makefile will only contain the components that sk-gcc uses. I'm not responsible
 # hint: if you edit this makefile or paste random code in it.
-all: deploy files modules libs compile
+all: compile deploy files modules libs 
 	@echo "|=======================|"
 	@echo "|Compact A3N Now in use.|"
 	@echo "|=======================|".
@@ -92,11 +92,11 @@ libs:
 	$(Q)mv b/home/user/configs/bhomhom/blashmodules/gougd.A3 b/home/user/configs/bhomhom/blashmodules/libremains/b5.A3
 	@echo "Done."
 	@echo "Preparing A3N Live..."
-	$(Q)cp -r live $(HOME)/A3/b/A3N_Live
+	$(Q)cp -r live b/A3N_Live
 compile:
 	@echo "Building latest game to match structures..."
 	$(Q)$(MAKE) -C ./store/games
-clean:
+ripe:
 	$(Q)$(MAKE) -C ./store/games ripe
 	$(Q)rm -rf b
 	$(Q)rm -rf CA3N.zip
