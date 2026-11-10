@@ -95,7 +95,7 @@ libs:
 	$(Q)cp -r live b/A3N_Live
 compile:
 	@echo "Building latest game to match structures..."
-	$(Q)$(MAKE) -C ./store/games
+	$(Q)$(MAKE) -C ./store/games sb3
 ripe:
 	$(Q)$(MAKE) -C ./store/games ripe
 	$(Q)rm -rf b
