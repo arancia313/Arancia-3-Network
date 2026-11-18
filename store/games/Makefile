@@ -1,5 +1,5 @@
-SKTARGET = Incredibox-Smart_Hub_Kuh_treatment
-A3PACK = ishkt
-PACKNAME = ishkt
+SKTARGET = Incredibox-Smart-Hub-Kuh-Treatment-2-beta
+A3PACK = ishkt2
+PACKNAME = ishkt2
 SK = $(SKGCC)
 include $(SK)/lib/bpack.mak
