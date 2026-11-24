@@ -1,2 +1,6 @@
 Newest updated Smart Hub mod. It's full of unique features and
 simple to use.
+
+It's built off Incredibox - Smart Hub Multishift and it has
+dark mode, integrated Arancia 3 Network & sk-gcc, toggle sun
+feature, and some more.
